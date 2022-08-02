@@ -1,0 +1,56 @@
+*{
+    border: none;
+}
+
+.main-heading{
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 70px;
+    color: #000000;
+    margin-left: 460px;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+
+
+}
+
+.mits-logo{
+    height: 40px;
+    width: 180px;
+    margin-left: 115px;
+    
+    
+}
+
+.nba-logo{
+    margin-top: 15px;
+    height: 40px;
+    width: 160px;
+    
+}
+.grid-button{
+    height: 40px;
+    width:187px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-width: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.01s;
+    margin-left: 54px;
+    margin-top: 70px;
+}
+
+.grid-button:hover{
+    background-color: rgb(33, 30, 30);
+    color: white;
+    
+}
+
+.grid-button:active{
+    opacity: 0.7;
+}

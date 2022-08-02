@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+body{
+  background-image: url("background-img.jpg");
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 360px;
+  border-radius: 10px;
+  box-shadow: 10px 15px 20px rgba(0,0,0,0.05);
+  background-color: #d12023;
+  opacity: 0.9;
+  
+}
+
+
+.center h1{
+  text-align: center;
+  font-size: 40px;
+  color:black;
+  padding: 20px 0;
+  font-weight: 800;
+  font-size: 47px;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  border-bottom: 2px solid gray;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid gray;
+  margin: 30px 0;
+  margin-bottom: 20px;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: white;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background:black;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color:black;
+  
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+
+
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-color: white;
+  background: white;
+  border-radius: 25px;
+  font-size: 18px;
+  color:black;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color:white;
+  transition: .5s;
+  opacity: 0.8;
+  background-color: black;
+  color: white;
+}
+
+input[type="submit"]:active{
+  transition: 0.5s;
+  opacity: 0.6;
+}
+
+
+.mits-logo{
+  height: 40px;
+  width: 200px;
+  margin-left: 2px;
+  
+  
+}
+
+.nba-logo{
+  
+  height: 40px;
+  width: 145px;
+  
+}

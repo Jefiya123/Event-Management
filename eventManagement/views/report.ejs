@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="margin:20px;" id="canvas_div_pdf">
+        <% tasks.forEach(task => {  %> 
+            <h2 style="text-decoration:underline;"><%= task.taskName.toUpperCase() %> </h2>
+            <p><b>Subcoordinator : </b> <%= task.subcoordinator.toUpperCase() %> &nbsp;&nbsp;|| <b> Budget : </b> <%= task.budget %> </p>
+        <% }) %> 
+        <% images.forEach(img => { %>
+            <img style="width:500px ; margin-left : 20px;" src="<%= img  %>"/> 
+            <br/>
+            <br/>  
+        <% }) %>  
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+    <script>
+      var element = document.getElementById("canvas_div_pdf");
+      html2pdf(element);
+    </script>
+  </body>
+</html>

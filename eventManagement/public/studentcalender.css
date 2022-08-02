@@ -1,0 +1,38 @@
+
+*{
+    border: none;
+}
+
+.main-heading{
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 70px;
+    color: #000000;
+    margin-left: 460px;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+
+
+}
+
+
+
+
+.mits-logo{
+    height: 40px;
+    width: 210px;
+    margin-left: 230px;
+    
+    
+}
+
+/*.nba-logo{
+    
+    height: 40px;
+    width: 160px;
+    margin-left: 200px;
+    
+}
+
+*/

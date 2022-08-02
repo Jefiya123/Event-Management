@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailer</title>
+    <link rel="stylesheet" href="/style_email_alert.css">
+</head>
+<body>
+    <img  class="mits-logo" src="/MITS-LOGO.jpeg">
+    <img class="nba-logo" src="/nba-logo.png">
+    <div class="center">
+        <h1>MAIL</h1>
+    <form action="/user/eventr/email-alert" method="post">
+        
+        <label>To : </label>
+         <input type="email" required name="to" id="to"><br>
+        Subject: <input type="text" name="subject" id="subject"><br><br>
+        Message:<br> <textarea id="message" name="message"></textarea> <br><br>
+        <input type="submit" value="Send">
+    </form>
+    <% if( typeof success != 'undefined') {%>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <centre><strong>Email was sent successfully!</strong></centre>
+          </div>
+
+        <%}%>
+    </div>
+   
+</body>
+
+    
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Event Management</title>
+</head>
+<body>
+ <header>
+        <nav>
+            <div class="website-name">
+                <h1>Event Management</h1>
+            </div>
+            <div class="menu">
+                <a href="/">home</a>
+                <% if (user) { %>
+                    <% if (user.roleName === 'ADMIN') { %>
+                      <a href="/admin/register-users">Register-Users</a>
+                    <% } %> 
+                    <% if(user.roleName === 'FACULTY') { %>
+                      <a href="/user/eventr">Add Events</a>
+                      <a href="/user/manage-event">Manage-Event</a>
+                      <!-- <a href="/user/generate-report">Generate-Report</a> -->
+                    <% } %> 
+                      <a href="/auth/logout">Logout</a>
+                    <% } else { %>
+                      <a href="/auth/login">Login</a>  
+                      <a href="/auth/studentcalender">Calendar</a> 
+                    <% } %>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h3>Welcome to MITS Event Management </h3>
+                <h1>A place to <span class="change-text">  </span></h1>
+            </section>
+        </main>
+    </header>
+</body>
+</html>
